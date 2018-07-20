@@ -16,7 +16,14 @@ class SearchBar extends Component {
     return (
       <div className="search-bar">
         <input
-          // Value is not getting its value until we hit return and trigger an event. Now we set value whenever the field is changed but not only this we set the state which means the component get re-rendered.
+          /* 
+          <This is a multiline comment>
+          <never extend comments above a length of 72 chars (as per java standards, check for JS)>
+          <This ensure readability, never letting the line cross the screen>
+          Value is not getting its value until we hit return and trigger an event.
+          Now we set value whenever the field is changed.
+          We set the state which means the component get re-rendered.
+          */
           value={this.state.term}
           onChange={event => this.onInputChange(event.target.value)} />
       </div>
